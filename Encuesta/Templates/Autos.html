@@ -1,0 +1,11 @@
+{% extends "Principal.html" %}
+{% block content%}
+<h1> {{ usuario }} </h1>
+    <ul>
+    {% for item in listado%}
+    	<li>
+    	{{item.patente}}
+    	</li>
+    {% endfor %}	
+    </ul>
+{% endblock %}
